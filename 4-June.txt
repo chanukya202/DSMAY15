@@ -1,0 +1,73 @@
+
+
+==============1=========================
+
+plt.plot(Salary[0], c= 'Red', ls = '--', marker ='s', ms = 7)
+plt.rcParams['figure.figsize'] = 10,5
+plt.xticks(list(range(0,10)),Seasons, rotation = 'vertical')
+plt.show()
+
+==============2=========================
+
+
+plt.plot(Salary[0], c= 'Red', ls = '--', marker ='s', ms = 7, label = (Players[0]))
+plt.plot(Salary[1], c= 'Blue', ls = '--', marker ='o', ms = 7, label = (Players[1]))
+plt.plot(Salary[2], c= 'Brown', ls = '--', marker ='^', ms = 7, label = (Players[2]))
+plt.rcParams['figure.figsize'] = 10,5
+plt.legend(loc = 'upper left', bbox_to_anchor=(1,1))
+plt.xticks(list(range(0,10)),Seasons, rotation = 'vertical')
+plt.show()
+
+==============3=========================
+
+plt.plot(Salary[0], c= 'Red', ls = '--', marker ='s', ms = 7, label = (Players[0]))
+plt.plot(Salary[1], c= 'Blue', ls = '--', marker ='o', ms = 7, label = (Players[1]))
+plt.plot(Salary[2], c= 'Brown', ls = '--', marker ='^', ms = 7, label = (Players[2]))
+plt.plot(Salary[3], c= 'Yellow', ls = '--', marker ='s', ms = 7, label = (Players[3]))
+plt.plot(Salary[4], c= 'Orange', ls = '--', marker ='o', ms = 7, label = (Players[4]))
+plt.plot(Salary[5], c= 'Black', ls = '--', marker ='^', ms = 7, label = (Players[5]))
+plt.plot(Salary[6], c= 'Brown', ls = '-', marker ='s', ms = 7, label = (Players[6]))
+plt.plot(Salary[7], c= 'Blue', ls = '--', marker ='o', ms = 7, label = (Players[7]))
+plt.plot(Salary[8], c= 'Brown', ls = '-', marker ='^', ms = 7, label = (Players[8]))
+plt.plot(Salary[9], c= 'Magenta', ls = '-', marker ='^', ms = 7, label = (Players[9]))
+plt.rcParams['figure.figsize'] = 10,5
+plt.legend(loc = 'upper left', bbox_to_anchor=(1,1))
+plt.xticks(list(range(0,10)),Seasons, rotation = 'vertical')
+plt.show()
+
+
+
+==============4=========================
+
+plt.plot(Games[0], c= 'Red', ls = '--', marker ='s', ms = 7, label = (Players[0]))
+plt.plot(Games[1], c= 'Blue', ls = '--', marker ='o', ms = 7, label = (Players[1]))
+plt.plot(Games[2], c= 'Brown', ls = '--', marker ='^', ms = 7, label = (Players[2]))
+plt.plot(Games[3], c= 'Yellow', ls = '--', marker ='s', ms = 7, label = (Players[3]))
+plt.plot(Games[4], c= 'Orange', ls = '--', marker ='o', ms = 7, label = (Players[4]))
+plt.plot(Games[5], c= 'Black', ls = '--', marker ='^', ms = 7, label = (Players[5]))
+plt.plot(Games[6], c= 'Brown', ls = '-', marker ='s', ms = 7, label = (Players[6]))
+plt.plot(Games[7], c= 'Blue', ls = '--', marker ='o', ms = 7, label = (Players[7]))
+plt.plot(Games[8], c= 'Brown', ls = '-', marker ='^', ms = 7, label = (Players[8]))
+plt.plot(Games[9], c= 'Magenta', ls = '-', marker ='^', ms = 7, label = (Players[9]))
+plt.rcParams['figure.figsize'] = 10,5
+plt.legend(loc = 'upper left', bbox_to_anchor=(1,1))
+plt.xticks(list(range(0,10)),Seasons, rotation = 'vertical')
+plt.show()
+
+==============5=========================
+
+def myplot(playerlist): # we will give input manually as a parameter
+  for name in playerlist:
+    plt.plot(Games[Pdict[name]], c = "Blue", ls ="--", marker = "^", ms = 2, label = name)
+  plt.legend(loc = 'upper left', bbox_to_anchor=(1,1))
+  plt.xticks(list(range(0,10)),Seasons, rotation = 'vertical')
+  plt.show()
+
+-------------------------------run and then give input parameters as below--------------
+
+myplot(["ChrisBosh", "DerrickRose" ])
+
+==============6=========================
+
+
+
